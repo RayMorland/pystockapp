@@ -1,7 +1,7 @@
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-from people.person import Person
+from assets.asset_one import AssetOne
 
 print("Welcome to the app")
 plt.style.use('seaborn') 
@@ -12,5 +12,5 @@ x = np.arange(len(y))
 plt.plot(x, y)
 # plt.show()
     
-bill = Person('Bill', 100)
-print('{0}\'s height is {1}'.format(bill.name ,bill.height))
+aapl = AssetOne('APPL', 100)
+print('{0}\'s value is {1}'.format(aapl.name ,aapl.value))
